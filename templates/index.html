@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body style="background-color: ivory;">
+    <!-- NavBar Content -->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">LogUrAttendance</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/addAttendance">Add Attendance</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/addStudent">Add Student</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="addTeacher">Add Teacher</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/attendanceOnDate">Get List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/executeQuery">Custom Query</a>
+                </li>
+                <!-- <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+                </li> -->
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+        <h1>Attendance Management System</h1>
+        <p class="lead">Manage your institution attendance data through this application efficiently. We help you easily enter, retrieve, query and process your institution attendance data.</p>
+        <br>
+        <p class="lead"> We provide pages for adding new student and teacher data, add attendance data, get attendance list for given date, and the final query page lets you write queries directly on the data and retrieve the data you require efficiently.</p>
+        <br><br>
+        <div class="m-3">
+            <a href="/addStudent">
+                <button class="btn btn-info" > Add student data</button></a>
+            <p class="lead ms-4" style="display: inline;"> : Add new student data into the student table.</p>
+        </div><br>
+        <div class="m-3">
+            <a href="/addTeacher">
+                <button class="btn btn-warning"> Add Faculty data</button></a>
+            <p class="lead ms-4" style="display: inline;"> : Add faculty data into the teachers table.</p>
+        </div><br>
+        <div class="m-3">
+            <a href="/addAttendance" style="display: inline">
+                <button class="btn btn-danger"> Add attendance</button></a>
+            <p class="lead ms-4" style="display: inline;"> : Add attendance data for given input date.</p>
+        </div><br>
+        <div class="m-3">
+            <a href="/executeQuery">
+                <button class="btn btn-primary">Execute SQL Queries</button></a>
+            <p class="lead ms-4" style="display: inline;"> : Execute your Custom SQL Queries onto your stored data in the database.</p>
+        </div><br>
+        <div class="m-3">
+            <a href="/attendanceOnDate">
+                <button class="btn btn-dark">Get Attendance List</button></a>
+            <p class="lead ms-4" style="display: inline;"> : Get attendance list for given input date from the database.</p>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>
